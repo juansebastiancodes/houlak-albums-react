@@ -27,7 +27,7 @@ export default function StickyHeadTable(props) {
         <Paper sx={{ width: '100%', overflow: 'hidden' }}>
             <TableContainer sx={{ maxHeight: '100%' }}>
                 <Table stickyHeader aria-label="sticky table" className='table'>
-                    <TableHead>
+                    <TableHead className="tableHead">
                         <TableRow>
                             {columns.map((column) => (
                                 <TableCell
@@ -42,7 +42,6 @@ export default function StickyHeadTable(props) {
                     </TableHead>
                     <TableBody>
                         {rows
-                            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             .map((row) => {
                                 return (
                                     <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
@@ -62,15 +61,6 @@ export default function StickyHeadTable(props) {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <TablePagination
-                rowsPerPageOptions={[10, 25, 100]}
-                component="div"
-                count={rows.length}
-                rowsPerPage={rowsPerPage}
-                page={page}
-                onPageChange={handleChangePage}
-                onRowsPerPageChange={handleChangeRowsPerPage}
-            />
         </Paper>
     );
 }

@@ -11,7 +11,6 @@ function Albums(props) {
         {
             id: 'date',
             label: 'Date',
-            minWidth: 170,
             align: 'right',
             format: (value) => value.toFixed(2),
         },
@@ -41,7 +40,7 @@ function Albums(props) {
     };
 
     return (
-        <Fragment className='tableContainer' >
+        <Fragment>
             <SearchBar onSearchClick={onSearchClick}/>
             {albums.length !== 0 ? <StickyHeadTable className='table' columns={albumTableColumns} rows={processRows(albums)}/> : <></>}
         </Fragment>
