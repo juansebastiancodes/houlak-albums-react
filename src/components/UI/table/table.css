@@ -1,0 +1,28 @@
+img {
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.table {
+    background-color: rgb(34, 34, 34);
+    color: rgb(173, 173, 173);
+    border: none !important;
+}
+
+p, .MuiTableCell-stickyHeader, #\:r2\: {
+     color:rgb(230, 230, 230) !important;
+}
+
+th {
+    background-color:rgb(34, 33, 33) !important;
+}
+
+.tableCell {
+    border:none !important;
+    color: rgb(230, 230, 230) !important;
+}
+
+.MuiToolbar-root {
+    background-color: rgb(34, 34, 34);
+}

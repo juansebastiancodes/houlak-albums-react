@@ -1,0 +1,34 @@
+
+.MuiInputBase-colorPrimary {
+    color:rgb(182, 182, 182) !important;
+}
+
+label {
+    color:rgb(182, 182, 182) !important;
+    font-weight: 700 !important;
+}
+
+.searchBar {
+    padding: 2rem;
+}
+
+.searchIcon {
+    color: rgb(182, 182, 182);
+}
+
+.searchButton {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 2px solid #e0e0e0 !important;
+}
