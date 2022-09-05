@@ -2,6 +2,15 @@
   "name": "houlak-albums",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "name": "houlak-albums-react",
+    "description": "fetch albums of an artist",
+    "version": "1.0.0",
+    "engines": {
+      "node": "16.x",
+      "npm": "8.x"
+    }
+  },
   "dependencies": {
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
